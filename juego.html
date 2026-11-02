@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel, Tijera, Lagarto o Spock | Juega online gratis</title>
+    <meta name="description" content="Juega online a Piedra, Papel, Tijera, Lagarto o Spock contra el ordenador. Gana quien llegue primero a 3 victorias. Gratis y sin registro.">
+    <meta name="theme-color" content="#0c1a33">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Piedra, Papel, Tijera, Lagarto o Spock">
+    <meta property="og:description" content="Juega online contra el ordenador. ¿Podrás vencer a Spock?">
+    <meta property="og:locale" content="es_ES">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="game">
+        <h1>Piedra, Papel, Tijera, Lagarto o Spock</h1>
+        <p class="subtitle">Gana quien llegue primero a 3 victorias</p>
+
+        <section class="arena" aria-label="Última jugada">
+            <div class="fighter">
+                <span class="fighter-name">Tú</span>
+                <div class="hand" id="playerHand">❔</div>
+            </div>
+            <span class="vs">VS</span>
+            <div class="fighter">
+                <span class="fighter-name">Ordenador</span>
+                <div class="hand" id="computerHand">❔</div>
+            </div>
+        </section>
+
+        <p id="result" role="status" aria-live="polite">Elige tu jugada</p>
+
+        <div class="score" id="score">
+            <span>Jugador <strong id="playerScore">0</strong></span>
+            <span>Ordenador <strong id="computerScore">0</strong></span>
+        </div>
+
+        <div class="choices">
+            <button class="choice" data-choice="Piedra"><span class="emoji">✊</span>Piedra</button>
+            <button class="choice" data-choice="Papel"><span class="emoji">✋</span>Papel</button>
+            <button class="choice" data-choice="Tijera"><span class="emoji">✌️</span>Tijera</button>
+            <button class="choice" data-choice="Lagarto"><span class="emoji">🦎</span>Lagarto</button>
+            <button class="choice" data-choice="Spock"><span class="emoji">🖖</span>Spock</button>
+        </div>
+
+        <button id="btnReset" class="reset">Reiniciar partida</button>
+
+        <a class="rules-link" href="index.html">Ver las reglas</a>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
